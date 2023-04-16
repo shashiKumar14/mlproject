@@ -1,0 +1,55 @@
+*create a git repository
+*clone the repository by adding README.md
+
+
+1)git remote -v
+2)git remote add origin https://github.com/shashiKumar14/mlproject.git
+3)git config --global user.email
+4)git config --global user.username
+5)git config --list
+
+
+#To deactivate environment
+1)if base environment is present remove using 
+    ==>conda deactivate
+
+#To create environment
+2)create the environment using 
+    ==>conda create -p .venv python=3.8 -y
+
+#To activate environment
+3)To activate the environment
+    ==>conda activate .venv
+==============================================================
+
+4)create requirements.txt file and setup.py
+
+5)pip install -r requirements.txt
+
+6)create the src folder with __init__.py
+
+7)in the src folder create components folder with __init__.py,ingestion,transformation,train add 
+pipline folder  with __init__.py,train,predict 
+
+8)in the src folder create logger.py,exception.py,utils.py
+
+9)create a notebook folder :in that folder csv's which we are using in data folder and outside ipynb files
+
+10)in notebook perform eda and selecting model
+==>dataclass we are using above class name insted of using def __init__
+   whenever we just define the variables we use
+
+11)in data ingestion taking the data from the resources like mongoDb,local e.t.c and we split the data into train,test
+
+12)write the code in datai_ingestion and it's output is used in data_transormation and it's output is used in model_trainer
+
+13)and add hyperparameter tuning in model_trainer
+======================================================================
+When we use aws beanstalk
+14)add .ebextensions and application.py
+
+15)Deployment in Elastic beanstalk link doc:https://docs.google.com/document/d/19BrhJllJX9z2Jlo8IgDa1-xXMPtcfrGgXo4l4_Ekxfw/edit#
+======================================================================
+When we use ec2 ,ecr,Docker
+16)
+
